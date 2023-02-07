@@ -1,3 +1,10 @@
+/*html {
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    width: 390px;
+}*/
+
 body {
   font-family: "space-mono", mono;
   font-weight: 400;
@@ -23,12 +30,13 @@ h1 {
 .main {
   border: 2px solid #085311;
   height: 720px;
-  width: 370px;
+  width: 310px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/*cards and content*/
 .card {
   display: flex;
   flex-direction: column;
@@ -36,17 +44,17 @@ h1 {
   border: 2px solid #53d562;
   box-shadow: 0px 0px 7px 2px;
   margin: 25px 15px 5px;
-  width: 300px;
+  width: 285px;
   height: 200px;
 }
 
-.question {
+.card__question {
   text-decoration: underline;
   text-decoration-color: rgb(47, 200, 47);
   text-underline-offset: 2px;
 }
 
-.answer-button {
+.card__answer-button {
   background-color: #000;
   color: #08f223;
   border: 2px solid #53d562;
@@ -54,4 +62,45 @@ h1 {
   font-family: "space-mono", mono;
   font-weight: 400;
   font-style: normal;
+  cursor: pointer;
+}
+
+.card__answer {
+  display: none;
+}
+
+.card__answer--visible {
+}
+
+.card__answer-button:active {
+  color: rgb(212, 53, 53);
+}
+
+/*footer & navbar*/
+
+footer {
+  display: flex;
+  justify-items: center;
+}
+
+nav {
+  display: flex;
+  justify-items: center;
+  top: auto;
+  bottom: 0;
+}
+
+.nav {
+  padding: 10px 15px;
+  margin: 12px;
+  background-color: #000;
+  border: 2px solid #085311;
+  box-shadow: 0px 0px 4px 2px #15ce2a;
+  color: #08f223;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav:active {
+  color: rgb(212, 53, 53);
 }
