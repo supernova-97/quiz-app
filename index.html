@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./javascript/index.js" defer></script>
     <link rel="stylesheet" href="https://use.typekit.net/wpk7ska.css">
+    <script src="./javascript/index.js" defer></script>
     <title>Coding Quiz</title>
 </head>
 <body>
@@ -17,29 +17,31 @@
    <section class="card" data-js="card">
     <h2 class="card__question">Question 1</h2>
      <p>What is semantic HTML?</p>
-     <button type="button"  class="card__answer-button">Show Answer</button>
+     <p class="card__answer" data-js="card__answer1">Semantic HTML helps with readability and accesibility </p>
+    <button type="button" class="card__answer-button" data-js="card__answer-button1">Show Answer</button>
    </section>
 
    <section class="card">
     <h2 class="card__question">Question 2</h2>
      <p>What does CSS stand for?</p>
-     <p class="card__answer" data-js="card__answer">Cascading Style Sheet</p>
-    <button type="button" class="card__answer-button" data-js="card__answer-button">Show Answer</button>
+     <p class="card__answer" data-js="card__answer2">Cascading Style Sheet</p>
+    <button type="button" class="card__answer-button" data-js="card__answer-button2">Show Answer</button>
    </section>
 
    <section class="card">
     <h2 class="card__question">Question 3</h2>
     <p>What are variables in JS?</p>
-    <button type="button" class="card__answer-button">Show Answer</button>
+    <p class="card__answer" data-js="card__answer3">Variables store data</p>
+    <button type="button" class="card__answer-button" data-js="card__answer-button3">Show Answer</button>
    </section>
  </main>
  <footer>
     <nav>
-      <a href="#" class="nav">Home</a>
+      <a href="./index.html" class="nav__link">Home</a>
        
-      <a href="#" class="nav">Bookmarks</a>
+      <a href="./bookmarks.html" class="nav__link">Bookmarks</a>
 
-      <a href="#" class="nav">Profile</a>
+      <a href="./profile.html" class="nav__link">Profile</a>
     </nav>
  </footer>
 
