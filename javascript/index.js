@@ -3,7 +3,16 @@ const showAnswer1 = document.querySelector('[data-js="card__answer-button1"]');
 
 showAnswer1.addEventListener("click", () => {
   getCardAnswer1.classList.toggle("card__answer--visible");
+  textChange();
 });
+
+function textChange() {
+  if (showAnswer1.innerHTML === "Show Answer") {
+    showAnswer1.innerHTML = "Hide Answer";
+  } else {
+    showAnswer1.innerHTML = "Show Answer";
+  }
+}
 
 const getCardAnswer2 = document.querySelector('[data-js="card__answer2"]');
 const showAnswer2 = document.querySelector('[data-js="card__answer-button2"]');

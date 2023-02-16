@@ -14,7 +14,37 @@
   <h1 class="head">&lt Coding Quiz &gt</Coding></h1>
  </header>
  <main class="main">
+
+  <section class="card">
+    <form>
+      <fieldset class="new-card">
+        <legend>Add New Card</legend>
+        <label for="input-question">Question:</label>
+        <textarea
+          type="text" 
+          name="input-question" 
+          id="input-question" 
+          minlength="5" 
+          maxlength="100" 
+          ></textarea>
+        </textarea> 
+        <label for="input_answer">Answer:</label>
+        <textarea 
+          type="text" 
+          name="input-answer" 
+          id="input-answer"
+          minlength="5"
+          maxlength="100"
+         ></textarea>
+      </fieldset>
+    </form>
+   <button type="submit" class="new-card-button">+ New Card</button>
+   </section>
+
    <section class="card" data-js="card">
+    <!--<button type="button">
+      <img src="../quiz-app/img/" />
+    </button> -->
     <h2 class="card__question">Question 1</h2>
      <p>What is semantic HTML?</p>
      <p class="card__answer" data-js="card__answer1">Semantic HTML helps with readability and accesibility </p>
@@ -34,8 +64,11 @@
     <p class="card__answer" data-js="card__answer3">Variables store data</p>
     <button type="button" class="card__answer-button" data-js="card__answer-button3">Show Answer</button>
    </section>
- </main>
- <footer>
+   
+   
+  
+  </main>
+  <footer>
     <nav>
       <a href="./index.html" class="nav__link">Home</a>
        
