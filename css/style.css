@@ -22,8 +22,8 @@ h1 {
 
 .main {
   border: 2px solid #085311;
-  height: 720px;
-  min-width: 280px;
+  height: auto;
+  min-width: 450px;
   margin: 0 15px;
   display: flex;
   flex-direction: column;
@@ -32,48 +32,54 @@ h1 {
 }
 
 /*cards and content*/
-.card {
+
+.new-card {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 20px 50px;
   border: 2px solid #08f223;
-  box-shadow: 0 0 7px 2px;
-  margin: 25px 0;
-  width: 84%;
-  height: auto;
-  min-width: 245px;
 }
 
-.card__question {
-  text-decoration: underline;
-  text-decoration-color: #08f223;
-  text-underline-offset: 2px;
-}
-
-.card__answer-button {
-  margin: 10px;
+#input-question {
   background-color: #000;
+  border: 2px solid #08f223;
+  color: #08f223;
+  font-family: "space-mono", mono;
+  width: 280px;
+  max-width: 280px;
+}
+
+#input-question:focus {
+  outline-color: #08f223;
+}
+
+#input-answer {
+  background-color: #000;
+  border: 2px solid #08f223;
+  color: #08f223;
+  font-family: "space-mono", mono;
+  width: 280px;
+  max-width: 280px;
+}
+
+#input-answer:focus {
+  outline-color: #08f223;
+}
+
+.new-card-button {
+  margin: 20px auto 20px;
+  padding: 5px 30px;
   color: #08f223;
   border: 2px solid #08f223;
-  padding: 2px 3px;
+  background-color: #000;
+  cursor: pointer;
   font-family: "space-mono", mono;
   font-weight: 400;
   font-style: normal;
-  cursor: pointer;
 }
 
-.card__answer {
-  text-align: center;
-  display: none;
-}
-
-.card__answer--visible {
-  display: block;
-  color: #08f223;
-  font-size: 15px;
-}
-
-.card__answer-button:active {
+.new-card-button:active {
   color: rgb(212, 53, 53);
 }
 
@@ -86,6 +92,9 @@ footer {
 }
 
 nav {
+  /*position: fixed;*/
+  background-color: #000;
+  border-top: 2px solid #085311;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -110,60 +119,16 @@ nav {
 
 /* Profile page!!! */
 
-.profile-image {
-  margin-top: 15px;
-  border: 2px solid #08f223;
-  box-shadow: 0 0 20px 2px #08f223;
-}
+/* Bookmark Page!! */
 
-p {
-  text-align: center;
-}
-
-h2 {
-  font-size: 20px;
-  text-decoration: underline;
-  text-underline-offset: 1px;
-  text-align: center;
-}
-
-.me-text {
-  font-size: 13px;
-  max-width: 400px;
-}
-
-.counters {
-  display: flex;
-  width: 60%;
-  justify-content: space-around;
-}
-
-.counter-display {
-  border: 0.5px solid #08f223;
-  padding: 0 15px;
-  margin: 20px 10px;
-}
-
-/* Darkmode Button */
-
-.settings {
+.main-bookmark {
+  border: 2px solid #085311;
+  height: auto;
+  min-height: 700px;
+  min-width: 450px;
+  margin: 0 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  margin-top: 15px;
-}
-
-button.redmode {
-  font-size: 15px;
-  width: 100px;
-  padding: 5px;
-  margin: 15px 0 50px;
-  background-color: #000;
-  border: 1px solid #08f223;
-  color: #08f223;
-}
-
-button.redmode:hover {
-  color: red;
+  overflow: scroll;
 }

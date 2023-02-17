@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/wpk7ska.css">
+    <link rel="stylesheet" href="https://use.typekit.net/wpk7ska.css" />
+    <link rel="stylesheet" href="./components/card.css" />
     <script src="./javascript/index.js" defer></script>
     <title>Coding Quiz</title>
 </head>
@@ -14,7 +15,38 @@
   <h1 class="head">&lt Coding Quiz &gt</Coding></h1>
  </header>
  <main class="main">
+
+  <section class="card">
+    <form>
+      <fieldset class="new-card">
+        <legend>Add New Card</legend>
+        <label for="input-question">Question:</label>
+        <textarea
+          type="text" 
+          name="input-question" 
+          id="input-question" 
+          minlength="5" 
+          maxlength="100" 
+          ></textarea>
+        </textarea> 
+        <label for="input_answer">Answer:</label>
+        <textarea 
+          type="text" 
+          name="input-answer" 
+          id="input-answer"
+          minlength="5"
+          maxlength="100"
+         ></textarea>
+      </fieldset>
+    </form>
+   <button type="submit" class="new-card-button">+ New Card</button>
+   </section>
+
    <section class="card" data-js="card">
+    <a>
+      <img src="./img/bookmark.png" />
+    </a>
+    
     <h2 class="card__question">Question 1</h2>
      <p>What is semantic HTML?</p>
      <p class="card__answer" data-js="card__answer1">Semantic HTML helps with readability and accesibility </p>
@@ -34,14 +66,17 @@
     <p class="card__answer" data-js="card__answer3">Variables store data</p>
     <button type="button" class="card__answer-button" data-js="card__answer-button3">Show Answer</button>
    </section>
- </main>
- <footer>
+   
+   
+  
+  </main>
+  <footer>
     <nav>
       <a href="./index.html" class="nav__link">Home</a>
        
       <a href="./bookmarks.html" class="nav__link">Bookmarks</a>
 
-      <a href="./profile.html" class="nav__link">Profile</a>
+      <a href="./profile-page/profile.html" class="nav__link">Profile</a>
     </nav>
  </footer>
 
